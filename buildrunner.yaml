@@ -1,0 +1,8 @@
+steps:
+  grafana-docker:
+    build:
+        path: .
+        no-cache: true
+    push:
+      repository: aamdocker.corp.adobe.com:5000/grafana
+      tags: [ 'latest' ]
